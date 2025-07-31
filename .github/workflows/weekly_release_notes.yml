@@ -1,9 +1,9 @@
-name: Weekly QA Release Notes
+name: Post Weekly QA Release Notes
 
 on:
+  workflow_dispatch:  # 👈 enables the "Run workflow" button
   schedule:
-    # Runs every Wednesday at 3:30 AM UTC = 9:00 AM IST
-    - cron: "30 3 * * 3"
+    - cron: '30 3 * * 3'  # Every Wednesday at 9:00 AM IST
 
 jobs:
   post-weekly-notes:
