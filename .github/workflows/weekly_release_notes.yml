@@ -25,7 +25,7 @@ jobs:
 
       - name: Run Weekly Notes Script
         env:
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
         run: |
           echo "$GOOGLE_CREDENTIALS_JSON" > credentials.json
