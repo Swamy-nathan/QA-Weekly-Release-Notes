@@ -79,8 +79,8 @@ def post_to_slack(message):
     print("✅ Slack sent:", response.status_code)
 
 def main():
-    if datetime.today().weekday() != 2:  # Only run on Wednesday
-        print("❌ This script only runs on Wednesdays. Today is not Wednesday.")
+    if datetime.today().weekday() != 1:  # Only run on Tuesday
+        print("❌ This script only runs on Tuesdays. Today is not Tuesday.")
         return
 
     # Auth
