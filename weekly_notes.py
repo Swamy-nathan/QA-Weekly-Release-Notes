@@ -64,7 +64,7 @@ def build_team_section(records, start_date, end_date, team_name):
 
                 lines.append(f" ●  *Work:*  {work or DEFAULT_MESSAGE}")
                 lines.append(f"     *Title:*  {title or DEFAULT_MESSAGE}")
-                lines.append(f"     *Description:*\n   {desc or DEFAULT_MESSAGE}\n")
+                lines.append(f"     *Description:*\n{desc or DEFAULT_MESSAGE}\n")
         else:
             if day.weekday() in (5, 6):  # Saturday=5, Sunday=6
                 lines.append(WEEKEND_MESSAGE + "\n")
